@@ -17,7 +17,7 @@ export default function Home() {
             backgroundImage: `url(${professorBg})`
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent z-10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-transparent z-10" />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10" />
       </div>
 
@@ -56,8 +56,7 @@ export default function Home() {
             <span>Play</span>
           </button>
           <button
-            className="flex items-center gap-3 px-8 py-3 bg-gray-600/50 hover:bg-gray-600/70 text-white font-medium rounded-md transition-colors duration-200 font-netflix text-paragraph md:text-lg border border-gray-500">
-            <Info className="w-6 h-6" />
+            className="flex items-center gap-3 px-8 py-3 bg-gray-400/20 hover:bg-gray-400/10 text-white font-medium rounded-md transition-colors duration-200 font-netflix text-paragraph md:text-lg border border-gray-500">
             <span>More Info</span>
           </button>
         </div>
