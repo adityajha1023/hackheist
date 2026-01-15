@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { Play, Info } from 'lucide-react'
+import { motion } from 'framer-motion'
 import professorBg from '../assets/professor-bg.jpg'
 import Navigation from './Navigation'
 
@@ -24,31 +25,56 @@ export default function Home() {
       {/* Content */}
       <div className="relative z-20 h-full flex flex-col justify-end px-8 md:px-16 pb-32 md:pb-48">
         {/* Series Label */}
-        <div className="mb-1">
+        <motion.div 
+          className="mb-1"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
           <span className="text-red-600 text-sm md:text-paragraph font-bold tracking-widest">GDG IILM</span>
-        </div>
+        </motion.div>
 
         {/* Main Title */}
-        <h1 className="text-[6rem] font-medium tracking-tight text-white mb-3 leading-tight font-netflix">
+        <motion.h1 
+          className="text-[6rem] font-medium tracking-tight text-white mb-3 leading-tight font-netflix"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+        >
           HACK O' CLOCK
-        </h1>
+        </motion.h1>
 
         {/* Metadata */}
-        <div className="flex flex-wrap items-center gap-3 md:gap-4 text-sm md:text-paragraph text-gray-300 mb-6">
+        <motion.div 
+          className="flex flex-wrap items-center gap-3 md:gap-4 text-sm md:text-paragraph text-gray-300 mb-6"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+        >
           <span>2025</span>
           <span>•</span>
           <span>Interactive Experience</span>
           <span>•</span>
           <span>Experimental</span>
-        </div>
+        </motion.div>
 
         {/* Description */}
-        <p className="text-lg md:text-xl text-gray-300 max-w-2xl mb-8 leading-relaxed">
+        <motion.p 
+          className="text-lg md:text-xl text-gray-300 max-w-2xl mb-8 leading-relaxed"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+        >
           Explore an immersive scroll-paragraphd interactive experience. Discover dynamic animations, smooth transitions, and innovative design techniques that push the boundaries of web experiences.
-        </p>
+        </motion.p>
 
         {/* Action Buttons */}
-        <div className="flex items-center gap-4">
+        <motion.div 
+          className="flex items-center gap-4"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+        >
           <button
             onClick={() => navigate('/scroll')}
             className="flex items-center gap-3 px-8 py-3 bg-white text-black font-medium rounded-md hover:bg-gray-200 transition-colors duration-200 font-netflix text-paragraph md:text-lg">
@@ -59,7 +85,7 @@ export default function Home() {
             className="flex items-center gap-3 px-8 py-3 bg-gray-400/20 hover:bg-gray-400/10 text-white font-medium rounded-md transition-colors duration-200 font-netflix text-paragraph md:text-lg border border-gray-500">
             <span>More Info</span>
           </button>
-        </div>
+        </motion.div>
       </div>
 
       {/* Vignette effect */}
