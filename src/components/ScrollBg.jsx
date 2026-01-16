@@ -44,7 +44,7 @@ function ScrollBg() {
             <div ref={bg1} className="bg bg-[#000] absolute h-screen w-screen z-[-1]"></div>
             <section>
                 <div ref={img_container} className='img-container perspective flex flex-col justify-center items-center h-screen w-screen'>
-                    <h1 ref={text1} className='font-bebas absolute top-20 z-50 text-h1 scale-150 text-[#db0c26] shadow-md'>Hack O' Clock</h1>
+                    <h1 ref={text1} className='font-netflix font-medium tracking-tight leading-tight text-[3.5rem] absolute top-20 z-50 scale-150 text-[#db0c26] shadow-md'>HACK O' CLOCK</h1>
                     <img ref={img} className='image' src={bg} alt="" />
                 </div>
                 <div ref={container} className="container">
